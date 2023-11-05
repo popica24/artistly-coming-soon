@@ -31,7 +31,7 @@ aside > span {
   color: #fff;
   text-align: center;
   font-family: Inter;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -132,7 +132,7 @@ figcaption > span {
 
   text-align: center;
   font-family: Inter;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
 }
@@ -171,22 +171,22 @@ input:active {
   outline: none; /* or outline: 0; */
 }
 .social-logo {
-  left: 0.5rem;
-  top: 0.43rem;
+  left: 0.4rem;
+  top: 0.33rem;
 }
 .social-logo-content {
-  left: 1.4rem;
-  top: 1.33rem;
+  left: 1rem;
+  top: 1.03rem;
 }
 .social-link {
   text-decoration: none;
   font-family: Inter;
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   font-style: italic;
   font-weight: 500;
   line-height: normal;
-  top: 1.5rem;
-  left: 7.4rem;
+  top: 0.9rem;
+  left: 4.6rem;
 }
 .facebook {
   color: #354093;
@@ -221,6 +221,8 @@ input:active {
   height: 1.625rem;
 }
 .cta-share-button {
+  box-shadow: 4px 5px 0px -1px #000000;
+  border: 0;
   width: 12rem;
   height: 3.43rem;
   flex-shrink: 0;
@@ -234,15 +236,28 @@ input:active {
   font-weight: 600;
   line-height: 141.523%; /* 2.21131rem */
 }
+.cta-share-button:hover {
+  box-shadow: none;
+}
 .copy-to-clipboard {
-  opacity: 0;
-  text-align: center;
-  top: 13rem;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
+  z-index: 10;
+  opacity: 1;
+  top: 13.3rem;
+  background: #ffb703;
 }
 .fadeOut {
   animation: fadeOut 2s linear forwards;
+}
+.cta-clipboard-group {
+  opacity: 1;
+  top: 12.6rem;
+}
+.cta-arrow {
+  width: 20px;
+  height: 20px;
+  > path {
+    fill: #ffb703;
+  }
 }
 @keyframes fadeOut {
   0% {
@@ -263,12 +278,19 @@ footer > span {
   color: var(--Text-Footer, #112a46);
   text-align: center;
   font-family: Inter;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 @media all and (max-width: 1200px) {
+  .cta-clipboard-group {
+    top: 14rem;
+  }
+  .header-container > span > svg {
+    width: 200px;
+    height: 50.6px;
+  }
   footer > span {
     font-size: 0.8rem;
   }
@@ -284,19 +306,19 @@ footer > span {
   .social-logo {
     width: 33px;
     height: 33px;
-    top: 1.25rem;
+    top: 0.55rem;
     left: 0.4rem;
   }
 
   .social-logo-content {
     width: 15px;
     height: 15px;
-    top: 1.75rem;
+    top: 1.15rem;
     left: 0.95rem;
   }
   .social-link {
     font-size: 0.8rem;
-    top: 1.6rem;
+    top: 1.1rem;
     left: 4.3rem;
   }
   .cta-input {
