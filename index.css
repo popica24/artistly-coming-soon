@@ -249,7 +249,7 @@ input:active {
   animation: fadeOut 2s linear forwards;
 }
 .cta-clipboard-group {
-  opacity: 1;
+  opacity: 0;
   top: 12.5rem;
 }
 .cta-arrow {
