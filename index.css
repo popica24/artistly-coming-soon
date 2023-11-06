@@ -325,9 +325,9 @@ footer > span {
     left: 0.95rem;
   }
   .social-link {
-    font-size: 0.8rem;
-    top: 1.1rem;
-    left: 4.3rem;
+    font-size: 0.7rem;
+    top: 1rem;
+    left: 3.5rem;
   }
   .cta-input {
     max-width: 15rem;
@@ -402,5 +402,10 @@ footer > span {
         transform: none;
       }
     }
+  }
+}
+@media screen and (min-width: 571px) and (max-width: 1200px) {
+  .down-arrow {
+    top: 4.4rem;
   }
 }
