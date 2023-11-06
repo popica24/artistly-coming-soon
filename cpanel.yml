@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=home/bavsctmu/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp index.css $DEPLOYPATH
+    - /bin/cp favicon.png $DEPLOYPATH
+    - /bin/cp -R static/ $DEPLOYPATH/static/
+    - /bin/cp -R font/ $DEPLOYPATH/font/
