@@ -215,7 +215,7 @@ input:active {
   position: absolute;
   border: none;
   left: 50%;
-  top: 6rem;
+  top: 4.4rem;
   transform: translateX(-50%);
   width: 7.1875rem;
   height: 1.625rem;
@@ -240,17 +240,19 @@ input:active {
   box-shadow: none;
 }
 .copy-to-clipboard {
+  border-radius: 0.8rem;
   z-index: 10;
   opacity: 1;
   top: 13.3rem;
-  background: #ffb703;
+  background: #07c;
+  color: white;
 }
 .fadeOut {
   animation: fadeOut 2s linear forwards;
 }
 .cta-clipboard-group {
-  opacity: 0;
-  top: 12.5rem;
+  opacity: 1;
+  top: 10.5rem;
 }
 .cta-arrow {
   width: 20px;
@@ -284,8 +286,14 @@ footer > span {
   line-height: normal;
 }
 @media all and (max-width: 1200px) {
+  .promo-hero-text {
+    font-size: 0.7rem;
+  }
+  .hero-promo {
+    margin-top: 2rem;
+  }
   .cta-clipboard-group {
-    top: 14rem;
+    top: 12rem;
   }
   .header-container > span > svg {
     width: 200px;
@@ -295,7 +303,7 @@ footer > span {
     font-size: 0.8rem;
   }
   .down-arrow {
-    top: 7rem;
+    top: 5.8rem;
   }
   .social-wrapper {
     > svg:first-of-type {
